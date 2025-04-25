@@ -2,12 +2,9 @@ import json
 import time
 from kafka import KafkaProducer
 from faker import Faker
+from .config import BOOTSTRAP_SERVERS, TRANSACTIONS_TOPIC, PRODUCE_INTERVAL
 
 fake = Faker()
-
-BOOTSTRAP_SERVERS = "localhost:9092"
-TOPIC = "transactions"
-
 producer = KafkaProducer(
     bootstrap_servers=BOOTSTRAP_SERVERS,
     value_serializer=lambda v: json.dumps(v).encode()
