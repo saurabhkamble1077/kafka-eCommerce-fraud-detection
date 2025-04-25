@@ -1,3 +1,14 @@
+# logs
+*.log
+logs/
+
+# os
+.DS_Store
+Thumbs.db
+
+# dist
+dist/
+*.egg-info/
 # python
 __pycache__/
 *.pyc
