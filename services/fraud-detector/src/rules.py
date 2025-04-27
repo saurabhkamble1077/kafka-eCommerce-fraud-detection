@@ -15,4 +15,4 @@ def check_velocity(user_id: str, timestamp: float) -> bool:
         window.popleft()
 
     window.append(now)
-    return len(window) > VELOCITY_LIMIT
+    return len(window) >= VELOCITY_LIMIT
