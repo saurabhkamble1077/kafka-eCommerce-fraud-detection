@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "TransactionEvent",
+  "namespace": "com.frauddetection",
+  "fields": [
+    {"name": "id",        "type": "string"},
+    {"name": "user_id",   "type": "string"},
+    {"name": "amount",    "type": "double"},
+    {"name": "merchant",  "type": "string"},
+    {"name": "timestamp", "type": "long"},
+    {"name": "country",   "type": ["null", "string"], "default": null}
+  ]
+}
