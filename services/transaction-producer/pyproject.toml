@@ -8,4 +8,5 @@ version = "0.1.0"
 dependencies = [
     "kafka-python==2.0.2",
     "faker==18.0.0",
+    faust-streaming==0.10.14,
 ]
