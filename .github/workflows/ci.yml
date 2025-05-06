@@ -12,4 +12,5 @@ jobs:
           python-version: '3.11'
       - run: pip install ruff pytest
       - run: ruff check services/
-      - run: pytest services/ -v --tb=short
+      - run: pytest services/ -v --tb=short  
+      
