@@ -22,6 +22,6 @@ def generate_transaction():
 if __name__ == "__main__":
     while True:
         txn = generate_transaction()
-        producer.send(TOPIC, txn)
+        producer.send(TRANSACTIONS_TOPIC, txn)
         print(f"sent: {txn['id']}")
         time.sleep(1)
