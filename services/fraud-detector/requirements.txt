@@ -1,2 +1,2 @@
-kafka-python==2.0.2
+kafka-python-ng==2.2.3
 scikit-learn==1.4.0
